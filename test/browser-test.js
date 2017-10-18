@@ -6,7 +6,7 @@ const webdriver = require('selenium-webdriver')
 require('chromedriver')
 const {By} = webdriver
 
-describe.only('Counter App', function() {
+describe('Counter App', function() {
   let driver
   before(() => (driver = new webdriver.Builder().forBrowser('chrome').build()))
   after(async () => await driver.quit())
